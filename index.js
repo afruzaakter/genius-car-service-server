@@ -88,6 +88,11 @@ app.get('/', (req, res)=>{
     res.send('Running Genius Server');
 })
 
+  //check heroku site
+  app.get('/hero', (req, res) =>{
+    res.send('Hi heroku website');
+});
+
 app.listen(port, () =>{
     console.log("Listening to port", port);
 });
